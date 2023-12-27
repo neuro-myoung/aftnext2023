@@ -1,0 +1,60 @@
+.galleriesMain {
+    min-height: 300vh;
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #f2f2f2
+}
+
+.galleryWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    position: relative;
+}
+
+.backgroundText {
+    position: relative;
+    font-size: 10rem;    
+    z-index:1
+}
+
+.foregroundText {
+        color: black;
+        position: absolute;
+        font-size: 10rem;
+        top: 200px;;
+        -webkit-text-fill-color: rgba(255,255,255,0); /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        z-index:3;
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background:red;
+    height: 100%;
+}
+
+.gridRight {
+    display: grid;
+    grid-template-areas:
+        " a a a b b b"
+        "c c d d e e"
+}
+
+.textCover {
+    background: #f2f2f2;
+    width: 100%;
+    height: 200px;
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+    z-index: 2;
+}

@@ -1,0 +1,25 @@
+.entry {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tagtext {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.entryOuter {
+    width: 100%;
+    margin: 5px 0;
+    padding:1rem;
+    border-radius: 5px;
+    max-width: 500px;
+
+    cursor: pointer;
+}
+
+.openEntry {
+    padding-top: 10px;
+}
+
