@@ -9,7 +9,7 @@ interface Props {
   display: boolean;
   title: string;
   desc: string;
-  toggle: any;
+  toggle: number;
 }
 
 const AccordionEntry = ({open, toggle, title, desc}: Props) => {
