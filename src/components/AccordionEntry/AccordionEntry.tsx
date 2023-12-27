@@ -4,7 +4,15 @@ import { TiMinus } from "react-icons/ti";
 import { PiCaretDown } from "react-icons/pi";
 import styles from './accordionentry.module.css'
 
-const AccordionEntry = ({open, toggle, title, desc}) => {
+
+interface Props {
+  open: number;
+  toggle: number;
+  title: string;
+  desc: string;
+}
+
+const AccordionEntry = ({open, toggle, title, desc}: Props) => {
   return (
     <div className={styles.entryOuter}>
         <div className={styles.entry} onClick={toggle}>
