@@ -6,7 +6,7 @@ import styles from './accordionentry.module.css'
 
 
 interface Props {
-  open: number|boolean;
+  open: boolean;
   title: string;
   desc: string;
   toggle: any;
