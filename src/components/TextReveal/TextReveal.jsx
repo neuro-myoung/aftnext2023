@@ -3,7 +3,7 @@ import React, { useRef, ReactNode } from 'react';
 import styles from './textreveal.module.css';
 import { useScroll, useTransform, motion } from 'framer-motion';
 
-const TextReveal = ({value}:ReactNode) => {
+const TextReveal = ({value}) => {
 
     const element = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -19,7 +19,7 @@ const TextReveal = ({value}:ReactNode) => {
             ref = {element}
         >
             {
-                words.map( (word:string, i) => {
+                words.map( (word, i) => {
                     const start = i / words.length
                     const end = start + (1 / words.length)
                     return <Word key = {i} range={[start, end]} progress={scrollYProgress}>{ word }</Word>
@@ -36,7 +36,7 @@ const Word = ({children, range, progress}) => {
     return (
         <span className={styles.word}>
             {
-                chars.map( (character:string, i) => {
+                chars.map( (character, i) => {
                     const start = range[0] + (step * i)
                     const end = range[0] + (step * ( i + 1 )); 
                     return <Character 
