@@ -87,6 +87,7 @@ const Column = ({images, y=0}) => {
               className='img'
               fill
               style={{objectFit:"cover"}}
+              sizes="(max-width: 768px) 100px, (max-width: 1200px) 200px, 300px"
             />
           </div>
         )}

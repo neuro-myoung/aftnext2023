@@ -50,7 +50,7 @@ const Accordion = () => {
                     return (
                         <AccordionEntry 
                             key={index} 
-                            display={index === open} 
+                            open={index === open} 
                             title={entry.item} 
                             desc={entry.description} 
                             toggle={() => toggle(index)}

@@ -6,13 +6,14 @@ import styles from './accordionentry.module.css'
 
 
 interface Props {
-  display: boolean;
+  open: number|boolean;
   title: string;
   desc: string;
-  toggle: number;
+  toggle: any;
 }
 
 const AccordionEntry = ({open, toggle, title, desc}: Props) => {
+  console.log(toggle)
   return (
     <div className={styles.entryOuter}>
         <div className={styles.entry} onClick={toggle}>
