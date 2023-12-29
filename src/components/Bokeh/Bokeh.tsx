@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from "react"
 import styles from './bokeh.module.css'
 
-function updateBokehPaths(bokehRefs) {
+function updateBokehPaths(bokehRefs:any) {
     const dirArr = [-1, 1]
     const bokehColors = ["#ffffff", "#e93e68", "#FFC300"]
     for (let i = 0; i < bokehRefs.current.length; i++) {
