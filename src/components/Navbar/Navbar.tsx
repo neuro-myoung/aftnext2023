@@ -1,6 +1,6 @@
 import styles from './navbar.module.css'
 import Link from "next/link";
-import NavItem from '@/components/NavItem/NavItem'
+import NavItems from '@/components/Navbar/NavItems/NavItems'
 
 const Navbar = () => {
   return (
@@ -10,9 +10,7 @@ const Navbar = () => {
             <div>
                 <Link href='/'>Alix Fuerst Art</Link>
             </div>
-            <div className={styles.navList}>
-                <NavItem />
-            </div>
+            <NavItems />
         </div>
       </header>
     </div>

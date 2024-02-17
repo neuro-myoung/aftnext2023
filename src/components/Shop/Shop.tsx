@@ -3,7 +3,6 @@ import Image from 'next/image'
 import styles from './shop.module.css'
 import Accordion from '../Accordion/Accordion'
 
-
 const Shop = () => {
     return(
         <section className={styles.shopWrapper}>

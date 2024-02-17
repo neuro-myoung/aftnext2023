@@ -1,0 +1,44 @@
+.contactWrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #c2c2c2;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.formBox {
+    width: 100%;
+    max-width: 600px;
+}
+
+.formElement {
+    display: flex;
+    flex-direction:column;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.sendButton {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border-radius: 2px;
+    width: 200px;
+    outline: 1px solid #c2c2c2;
+    color: #c2c2c2;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0);
+    border-width: 0;
+    cursor: pointer;
+}
+
+
+.sendButton:hover,
+.sendButton:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    outline: no-outline;
+}
