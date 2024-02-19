@@ -1,10 +1,7 @@
 'use client';
 import styles from './contact.module.css';
-import { useRef, useEffect, useState} from 'react';
 
 export default function ContactForm() {
-    const [isMessageSent, setMessageSent] = useState<boolean>(false);
-    const formRef = useRef<HTMLFormElement | null>(null);
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
 
@@ -40,22 +37,9 @@ export default function ContactForm() {
             console.log("There was a problem with the fetch operation " + error.message)
         }
     }
-              
-    useEffect(() => {
-        let timeout: NodeJS.Timeout;
-        if(isMessageSent && formRef) {
-            formRef.current?.reset()
-            setTimeout(() => {
-                setMessageSent(false)
-            }, 3000);
-        }
-    return () => {
-            clearTimeout(timeout);
-    };
-    }, [isMessageSent]);
   
     return (
-        <form className={styles.formBox} onSubmit={handleSubmit} ref={formRef}>
+        <form className={styles.formBox} onSubmit={handleSubmit}>
             <div className={styles.formElement}>
                 <label htmlFor="name">Name</label>
                 <input type="text" id="name" className={styles.inputBox} autoComplete="off" required minLength={3} maxLength={150} />
