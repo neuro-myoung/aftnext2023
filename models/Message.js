@@ -8,4 +8,4 @@ const MessageSchema = new mongoose.Schema({
     date: Date,
 })
 
-module.exports = mongoose.models.Message ?? mongoose.model("Message", MessageSchema);
+export default mongoose.models.Message ?? mongoose.model("Message", MessageSchema);
