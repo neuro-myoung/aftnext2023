@@ -4,14 +4,58 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #c2c2c2;
+    color: #0e0008;
     width: 100%;
-    padding: 0 1rem;
+    padding: 150px 1rem;
+    background: #f2f2f2;
+}
+
+.contactWrapper > h1 {
+    width: 100%;
+    max-width: 1400px;
+    margin-bottom: 1rem;
+}
+
+.formWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1400px;
+    width: 100%;
+    background: #f2f2f2;
+    justify-items: center;
+    border-radius: 3px;
+    padding: 5rem 0.75rem;
+    border: 2px solid #0e0008;
+    position: relative;
+}
+
+.formWrapper::after {
+    content: "";
+    position: absolute;
+    top: 2.5%;
+    background: #f2f2f2;
+    width: 100%;
+    border: solid 2px #f2f2f2;
+    height: 95%;
+}
+
+.descriptionWrapper {
+    margin: 0 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.descriptionWrapper > p {
+    max-width: 65ch;
 }
 
 .formBox {
     width: 100%;
     max-width: 600px;
+    z-index: 5;
 }
 
 .formElement {
@@ -21,24 +65,34 @@
     width: 100%;
 }
 
+.inputBox {
+    padding: 0.75rem 0.5rem;
+    border: 1px solid #0e0008;
+    border-radius: 3px;
+}
+
+.inputBox:focus {
+    outline:none;
+    background-color: rgba(233, 62, 104, 0.2);
+}
+
 .sendButton {
     position: relative;
     transition: all 0.2s ease-in-out;
     border-radius: 2px;
     width: 200px;
-    outline: 1px solid #c2c2c2;
-    color: #c2c2c2;
+    outline: 1px solid #0e0008;
+    color: #0e0008;
     padding: 0.75rem 2rem;
     font-size: 1.2rem;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
     border-width: 0;
     cursor: pointer;
 }
 
-
 .sendButton:hover,
 .sendButton:focus {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
     outline: no-outline;
 }
