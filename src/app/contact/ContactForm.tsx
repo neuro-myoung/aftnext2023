@@ -1,16 +1,20 @@
 'use client';
-import styles from './contact.module.css'
+import styles from './contact.module.css';
+import { useRef, useEffect, useState} from 'react';
 
 export default function ContactForm() {
+    const [isMessageSent, setMessageSent] = useState<boolean>(false);
+    const formRef = useRef<HTMLFormElement | null>(null);
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+
         e.preventDefault();
 
         const target = e.currentTarget;
-        const name = target.elements.namedItem('name') as HTMLInputElement
-        const email = target.elements.namedItem('email') as HTMLInputElement
-        const subject = target.elements.namedItem('subject') as HTMLInputElement
-        const message = target.elements.namedItem('message') as HTMLInputElement
+        const name = target.elements.namedItem('name') as HTMLInputElement;
+        const email = target.elements.namedItem('email') as HTMLInputElement;
+        const subject = target.elements.namedItem('subject') as HTMLInputElement;
+        const message = target.elements.namedItem('message') as HTMLInputElement;
 
         const data = {
             name: String(name.value),
@@ -36,9 +40,22 @@ export default function ContactForm() {
             console.log("There was a problem with the fetch operation " + error.message)
         }
     }
-
+              
+    useEffect(() => {
+        let timeout: NodeJS.Timeout;
+        if(isMessageSent && formRef) {
+            formRef.current?.reset()
+            setTimeout(() => {
+                setMessageSent(false)
+            }, 3000);
+        }
+    return () => {
+            clearTimeout(timeout);
+    };
+    }, [isMessageSent]);
+  
     return (
-        <form className={styles.formBox} onSubmit={handleSubmit}>
+        <form className={styles.formBox} onSubmit={handleSubmit} ref={formRef}>
             <div className={styles.formElement}>
                 <label htmlFor="name">Name</label>
                 <input type="text" id="name" className={styles.inputBox} autoComplete="off" required minLength={3} maxLength={150} />
