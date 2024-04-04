@@ -1,8 +1,16 @@
 /** @type {import('next').NextConfig} */
 
-module.exports = {
-    experimental: {
-        serverComponentsExternalPackages: ['mongoose'],
-    },
-};
+const nextConfig = {
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: "cdn.sanity.io",
+                port: '',
+            }
+        ]
+    }
+}
+
+module.exports = nextConfig
 

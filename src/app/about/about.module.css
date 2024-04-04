@@ -27,13 +27,14 @@
 }
 
 .imgContainer {
-    height: 100%;
+    height: 80%;
     position: relative;
     aspect-ratio: 1/1;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
+    max-height: 600px;
 }
 
 .artistImg {
-    border-radius: 50px;
+    border-radius: 100px;
 }

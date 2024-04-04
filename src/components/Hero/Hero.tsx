@@ -27,6 +27,7 @@ const Hero = () => {
                     <Image
                         src="/static/images/shorthairedpointer3.png"
                         fill={true}
+                        className={styles.img}
                         style={{objectFit:"contain"}}
                         alt="Colored pencil drawing of a short-haired pointer."
                     />
