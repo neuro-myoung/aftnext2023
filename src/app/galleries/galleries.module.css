@@ -51,7 +51,6 @@
   align-content: space-around;
   grid-template-columns: repeat(4, 300px);
   grid-gap: 50px;
-  background: red;
 }
 
 .imgWrapper {
