@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "@sanity/cli": "^3.36.4",
+    "@sanity/client": "^6.15.9",
+    "@sanity/types": "^3.36.4",
+    "@sanity/vision": "^3.36.4",
     "@studio-freight/lenis": "^1.0.29",
     "@types/react-collapse": "^5.0.4",
     "framer-motion": "^10.16.16",
