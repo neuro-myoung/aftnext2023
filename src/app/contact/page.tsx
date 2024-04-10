@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './contact.module.css';
 import ContactForm from './ContactForm';
-import { SocialIcon } from 'react-social-icons';
 import { TfiEmail } from "react-icons/tfi";
 import { FaFacebook, FaInstagram, FaTiktok, FaYoutube} from "react-icons/fa";
 import Link from 'next/link'
