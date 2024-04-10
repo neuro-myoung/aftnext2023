@@ -24,8 +24,8 @@
     "react-collapse": "^5.1.1",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
-    "react-social-icons": "^6.16.0",
-    "sanity": "^3.36.4"
+    "sanity": "^3.36.4",
+    "yet-another-react-lightbox": "^3.17.2"
   },
   "devDependencies": {
     "@types/node": "^20",

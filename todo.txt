@@ -1,0 +1,14 @@
+MVP criteria:
+    - Lightbox for Galleries
+    - Fix Contact form submission
+    - Consistent styling for About
+    - Add images to shop for art section
+    - make all links live
+    - make responsive (3 bps)
+    - replace site logo
+    - page title SEO 
+    - favicon
+    - Add Commission page
+    - Footer
+
+--> 2 weeks of testing before going live

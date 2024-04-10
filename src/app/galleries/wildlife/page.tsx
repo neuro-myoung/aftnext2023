@@ -2,6 +2,10 @@ import { client } from "@/app/lib/sanity"
 import styles from '../galleries.module.css'
 import { galleryImageTypes } from "@/app/lib/interface";
 import Image from 'next/image'
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
+import NextLightbox from "@/components/NextLightbox";
 
 
 async function getImages() {
@@ -37,3 +41,4 @@ export default async function WildlifeGallery() {
         </main>
     )
 }
+
