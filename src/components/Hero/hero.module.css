@@ -77,6 +77,10 @@
     gap: 2rem;
 }
 
+.img {
+    opacity: 80%;
+}
+
 @media (orientation: portrait) {
     .content {
         grid-template-rows: 1fr 1fr;

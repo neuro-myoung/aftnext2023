@@ -34,12 +34,12 @@ const AccordionEntry = ({open, toggle, title, desc, imgsrc, alt}: Props) => {
                   alt={alt}
                   className={styles.img}
                   style={{objectFit:"cover"}}
-                  width={200}
-                  height={200}
+                  width={250}
+                  height={250}
                 />
               </div>
 
-              <div>
+              <div className={styles.desc}>
                 {desc}
               </div>
             </div>

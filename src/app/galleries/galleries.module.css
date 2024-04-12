@@ -47,10 +47,10 @@
 .innerWrapper {
   display: grid;
   width: 100%;
-  justify-content: space-around;
-  align-content: space-around;
+  justify-content: center;
+  align-content: center;
   grid-template-columns: repeat(4, 300px);
-  grid-gap: 50px;
+  grid-gap: 1rem;
 }
 
 .imgWrapper {
@@ -58,9 +58,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 300px;
+  width: 300px;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
+  position: relative;
 }
 
 .imgWrapper:hover,

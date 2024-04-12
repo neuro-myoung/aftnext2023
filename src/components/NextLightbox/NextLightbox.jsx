@@ -1,10 +1,10 @@
+import Image from "next/image";
 import {
   isImageFitCover,
   isImageSlide,
   useLightboxProps,
   useLightboxState,
 } from "yet-another-react-lightbox";
-import Image from 'next/image'
 
 function isNextJsImage(slide) {
   return (

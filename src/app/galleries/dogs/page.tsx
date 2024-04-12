@@ -28,7 +28,12 @@ export default async function DogGallery() {
                 <div className={styles.innerWrapper}>
                 {data.map((img, idx) => (
                     <div key={ idx } className={styles.imgWrapper}>
-                        <Image src={ img.image } alt="test" width={300} height={300} className={styles.thumbnail}/>
+                        <Image 
+                            src={ img.image } 
+                            alt="test" fill={true}
+                            sizes="(max-width:768px) 200px, 300px"
+                            className={styles.thumbnail}
+                            />
                     </div>
                 ))}
                 </div>
