@@ -5,9 +5,6 @@ import Image from 'next/image'
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-import NextLightbox from "@/components/NextLightbox";
-
-
 async function getImages() {
     const query = `
     *[_type == 'galleryimage' && gallery == 'Wildlife']|order(_createdAt asc){
